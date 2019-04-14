@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | The Amazing Maze</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/theamazingmaze.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">  
+            <div class="title">Full Screen</div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div>
+
+                Welcome to our Amazing Maze!<br>
+                <b>How to Play: </b><br>
+                Use arrow keys or "w","a","s","d" keys to navigate through the maze.<br>
+                Your purpose is collecting all the eggs and reveal the secret sentence!<br>
+                Use ESC button to exit full screen mode.
+                <br>
+                <b><i>Good Luck!</i></b>
+                <br>
+                <a href="#">Click here to go back and fill the form</a>
+
+
+             </div>
+     
+      
+      </div>
+    </div>
+  </body>
+</html>
